@@ -102,6 +102,10 @@ color: #212121;
 color: #2196F3;
 }
 
+.current {
+color: #2196F3
+}
+
 .information {
 display: flex;
 align-items: center;
@@ -194,9 +198,15 @@ height: 50px;
 margin-left: auto;
 margin-right: auto;
 
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+
+color: #FFFFFF;
 background: #2196F3;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border: none;
 }
 
 /* Наши преимущества */
@@ -242,6 +252,8 @@ font-size: 14px;
 line-height: 1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
+
+margin-bottom: 10px;
     
 color: #212121;
 }
@@ -479,8 +491,6 @@ margin-bottom: 20px;
 color: #FFFFFF;
 }
 
-
-
 .join-link-list {
 display: flex;
 justify-content: space-between;
@@ -493,6 +503,10 @@ background-color: rgba(255, 255, 255, 0.1);
 
 .seti-icons-box:not(:last-child) {
 margin-right: 10px;
+}
+
+.seti-icons-link {
+fill: #FFFFFF;
 }
 
 /* ПОРТФОЛИО */
@@ -561,9 +575,14 @@ margin-right: 0;
 height: 404px;
 }
 
-.portfolio-item:hover{
+.portfolio-link:hover,
+.portfolio-link:focus {
 cursor: pointer;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio-link {
+text-decoration: none;
 }
 
 .portfolio-text {
